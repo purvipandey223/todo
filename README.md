@@ -23,18 +23,7 @@ A simple and extensible TODO application written in Python.
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-3. Install dependencies (if any):
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Usage
-
-Run the main application file:
-```bash
-python main.py
-```
-Or follow the instructions in the code to use the application.
 
 ## Contributing
 
@@ -42,7 +31,7 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 
-This project is open source. See the LICENSE file for details.
+This project is open source.
 
 ---
 
