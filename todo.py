@@ -82,7 +82,7 @@ def weather(city):
     }
     city = city.replace(" ", "+")
     res = requests.get(
-        f'https://www.google.com/search?q={city}&oq={city}&aqs=chrome.0.35i39l2j0l4j46j69i60.6128j1j7&sourceid=chrome&ie=UTF-8', headers=headers)
+        #f'https://www.google.com/search?q={city}&oq={city}&aqs=chrome.0.35i39l2j0l4j46j69i60.6128j1j7&sourceid=chrome&ie=UTF-8', headers=headers)
     print("Searching...\n")
     soup = BeautifulSoup(res.text, 'html.parser')
     location = soup.select('#wob_loc')[0].getText().strip()
@@ -199,15 +199,10 @@ if __name__ == "__main__":
 
             from twilio.rest import Client
 
-            account_sid = 'ACb88a2beee5819c9bccd3d840e563400c'
-            auth_token = '13de74f4d35a68d984e5a55c48adf8ed'
-            client = Client(account_sid, auth_token)
-
             message = client.messages \
                 .create(
                 body=msg,
-                from_='+15075025948',
-                to='+917587169427'
+              
             )
 
             print(message.sid)
@@ -219,8 +214,6 @@ if __name__ == "__main__":
 
             from twilio.rest import Client
 
-            accountSid = 'ACb88a2beee5819c9bccd3d840e563400c'
-            authToken = '13de74f4d35a68d984e5a55c48adf8ed'
 
             client = Client(accountSid, authToken)
 
